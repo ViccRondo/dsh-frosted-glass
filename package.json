@@ -1,0 +1,64 @@
+{
+  "name": "dsh-frosted-glass",
+  "version": "0.1.0",
+  "description": "Native macOS vibrancy for the DSH Desktop window: lets the Web GUI's panes show the frosted-glass material",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon.svg": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.zh.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "macos",
+    "vibrancy",
+    "frosted-glass",
+    "translucency",
+    "theme"
+  ],
+  "author": "LongZhou <https://github.com/ViccRondo>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViccRondo/dsh-frosted-glass.git"
+  },
+  "homepage": "https://github.com/ViccRondo/dsh-frosted-glass#readme",
+  "bugs": {
+    "url": "https://github.com/ViccRondo/dsh-frosted-glass/issues"
+  },
+  "icon": "./icon.svg",
+  "engines": {
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

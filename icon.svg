@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Frosted glass">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b4d8f"/>
+      <stop offset="0.55" stop-color="#5b6bd6"/>
+      <stop offset="1" stop-color="#a56bd6"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="96" height="96" rx="22"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="96" height="96" fill="url(#bg)"/>
+    <circle cx="30" cy="34" r="24" fill="#7ae0ff" opacity="0.45"/>
+    <circle cx="70" cy="70" r="28" fill="#ff9bd2" opacity="0.35"/>
+    <rect x="16" y="18" width="64" height="60" rx="14" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.55"/>
+    <rect x="24" y="34" width="48" height="4" rx="2" fill="#ffffff" opacity="0.7"/>
+    <rect x="24" y="45" width="34" height="4" rx="2" fill="#ffffff" opacity="0.45"/>
+    <rect x="24" y="56" width="40" height="4" rx="2" fill="#ffffff" opacity="0.3"/>
+  </g>
+</svg>
